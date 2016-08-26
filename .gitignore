@@ -1,0 +1,6 @@
+*.jar
+*.war
+*.ear
+
+.idea/workspace.xml
+target/
