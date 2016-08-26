@@ -13,5 +13,8 @@ import java.util.List;
 public interface RecordRepository extends CrudRepository<Record, Long>{
     Record findOneBySymbol(String symbol);
 
+    List<Record> findAll();
+
     List<Record> findByStockContaining(String keyword);
+
 }

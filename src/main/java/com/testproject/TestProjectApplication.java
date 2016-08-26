@@ -10,6 +10,6 @@ public class TestProjectApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(new Object[]{TestProjectApplication.class, MainController.class}, args);;
+		SpringApplication.run(new Object[]{TestProjectApplication.class, MainController.class}, args);
 	}
 }

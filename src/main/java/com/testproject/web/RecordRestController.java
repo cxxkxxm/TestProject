@@ -26,6 +26,11 @@ public class RecordRestController {
         return recordRepository.findOneBySymbol(symbol);
     }
 
+    @RequestMapping(value = "/post/findAll")
+    public List<Record> findAll() {
+        return recordRepository.findAll();
+    }
+
     @RequestMapping(value = "/post/search")
     public List<Record> findByStockContaining(@RequestParam("keyword") String keyword) {
         return recordRepository.findByStockContaining(keyword);
