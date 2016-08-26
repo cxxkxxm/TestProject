@@ -31,10 +31,22 @@ public class RecordRestController {
         return recordRepository.findAll();
     }
 
-    @RequestMapping(value = "/post/save")
-    public void save() {
+    /*@RequestMapping(value = "/post/save")
+    public Record createRecord(String date, String stock, String symbol, String currency, Double buyprice, Double stocksize, Double networth, String comments) {
+        String invId = "";
+        Record newRecord;
+        try {
+            newRecord = new Record(date, stock, symbol, currency, buyprice, stocksize, networth, comments);
+            recordRepository.save(newRecord);
+            invId = String.valueOf(newRecord.getId());
+        }
+        catch (Exception ex) {
+            return null;
+        }
+        //return "New investment recorded successfully with id = " + invId;
 
-    }
+        return newRecord;
+    }*/
 
     @RequestMapping(value = "/post/search")
     public List<Record> findByStockContaining(@RequestParam("keyword") String keyword) {

@@ -15,7 +15,7 @@ import java.io.Serializable;
 public class Record {
     @Id
     @GeneratedValue
-    private Long id;
+    private Integer id;
     private String date;
     private String stock;
     private String symbol;
@@ -25,11 +25,28 @@ public class Record {
     private Double networth;
     private String comments;
 
-    public Long getId() {
+    /*public Record() {}
+
+    public Record(Long id) {
+        this.id = id;
+    }*/
+
+    /*public Record(String date, String stock, String symbol, String currency, Double buyprice, Double stocksize, Double networth, String comments) {
+        this.date = date;
+        this.stock = stock;
+        this.symbol = symbol;
+        this.currency = currency;
+        this.buyprice = buyprice;
+        this.stocksize = stocksize;
+        this.networth = networth;
+        this.comments = comments;
+    }*/
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
