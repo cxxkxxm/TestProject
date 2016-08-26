@@ -31,6 +31,11 @@ public class RecordRestController {
         return recordRepository.findAll();
     }
 
+    @RequestMapping(value = "/post/save")
+    public void save() {
+
+    }
+
     @RequestMapping(value = "/post/search")
     public List<Record> findByStockContaining(@RequestParam("keyword") String keyword) {
         return recordRepository.findByStockContaining(keyword);
