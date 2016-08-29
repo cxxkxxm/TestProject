@@ -1,0 +1,7 @@
+---
+applications:
+  - name: testproject
+    buildpack: java_buildpack
+    path: target/testproject-0.0.1-SNAPSHOT.jar
+    services:
+      - mysql
