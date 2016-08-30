@@ -37,7 +37,7 @@ cf push -n [subdomain]
 
 ## Running on local server
 
-1. in application.yml
+1) in application.yml
 ```bash
 ---
 spring:
@@ -55,7 +55,7 @@ It uses databses with name "testdb" and user with username "testproject" and pas
 So either create user "testproject" [recommended]
 or modify application.yml with your settings. [not recommended]
 
-2. The program initialize the database with default value, so drop table "record" in "testdb" if existing
+2) The program initialize the database with default value, so drop table "record" in "testdb" if existing
 otherwise it may cause problem.
 
 
