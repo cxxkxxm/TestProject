@@ -9,7 +9,7 @@ Log in.
 cf login -a https://api.run.pivotal.io
 ```
 
-Target your org / space.
+Target your org / space. // no need to use this command
 
 ```bash
 cf target -o [myorg] -s [myspace]
@@ -29,6 +29,7 @@ mvn package
 ```
 
 Push the app. Its manifest assumes you called your ClearDB instance 'mysql'.
+// for [subdomain], enter whatever you want.
 
 ```bash
 cf push -n [subdomain]
