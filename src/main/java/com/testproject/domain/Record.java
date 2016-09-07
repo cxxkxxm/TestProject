@@ -25,13 +25,7 @@ public class Record {
     private Double networth;
     private String comments;
 
-    /*public Record() {}
-
-    public Record(Long id) {
-        this.id = id;
-    }*/
-
-    /*public Record(String date, String stock, String symbol, String currency, Double buyprice, Double stocksize, Double networth, String comments) {
+    public Record(String date, String stock, String symbol, String currency, Double buyprice, Double stocksize, Double networth, String comments) {
         this.date = date;
         this.stock = stock;
         this.symbol = symbol;
@@ -40,7 +34,10 @@ public class Record {
         this.stocksize = stocksize;
         this.networth = networth;
         this.comments = comments;
-    }*/
+    }
+
+    Record() {}
+
 
     public Integer getId() {
         return id;

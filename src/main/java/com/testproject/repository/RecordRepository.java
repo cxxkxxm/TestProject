@@ -10,13 +10,10 @@ import java.util.List;
  * Created by Sibie on 8/24/2016.
  */
 @Repository
-public interface RecordRepository extends CrudRepository<Record, Long>{
+public interface RecordRepository extends CrudRepository<Record, Integer>{
     Record findOneBySymbol(String symbol);
 
     List<Record> findAll();
-
-    List<Record> findByStockContaining(String keyword);
-
     //Record createRecord(String date, String stock, String symbol, String currency, Double buyprice, Double stocksize, Double networth, String comments );
     //Record createRecord();
 

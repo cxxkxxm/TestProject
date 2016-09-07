@@ -2,5 +2,7 @@
 *.war
 *.ear
 
-.idea/workspace.xml
+.idea/
 target/
+
+testproject.iml
